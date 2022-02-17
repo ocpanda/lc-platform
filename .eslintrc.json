@@ -1,0 +1,29 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "commonjs": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "jsx": true
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "standard"
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}
