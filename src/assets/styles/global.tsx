@@ -3,4 +3,6 @@ export const color = {
   fontPrimary: '#fff',
   fontMain: '#61dafb',
   fontSubMain: '#000',
+  fontPlaceholder: '#797979',
+  shadow: '#4e525c',
 }

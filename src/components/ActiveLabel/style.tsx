@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { color } from '@/assets/global'
+import { color } from '@/assets/styles/global'
 
 export const Label = styled.div`
   font-size: 16px;

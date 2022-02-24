@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { color } from '@/assets/global'
+import { color } from '@/assets/styles/global'
 
 export const AsideName = styled.div`
   width: 240px;
@@ -8,5 +8,9 @@ export const AsideName = styled.div`
 
   a {
     text-decoration: none;
+  }
+
+  & div:hover {
+    background: #123;
   }
 `
