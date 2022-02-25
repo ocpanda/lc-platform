@@ -1,5 +1,7 @@
-export const getPerformance = (body: {}) => {
+import "./ghr"
+
+export const getPerformance = async (body: {}) => {
   const params: {} = {}
-  
+
   return []
 }

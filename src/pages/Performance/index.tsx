@@ -6,6 +6,9 @@ import { defineFields } from '@/components/SearchForm/define'
 import TableComp from './table'
 import { useButton } from '@/components/basic/Button/index'
 import { SearchForm, useSearch } from './useSearch'
+import LC_GOOGLE_CONFIG from '@/configs/lc-platform-key.json'
+import DOC_CONFIG from '@/configs/doc-config.json'
+import useGoogleSheets from 'use-google-sheets'
 
 interface Props {}
 
@@ -29,6 +32,17 @@ function Performance(props: Props): JSX.Element {
   const { buttonTrigger } = useButton(() => {
     onSearch()
   })
+
+  const useGapi = async () => {
+    const { data } = useGoogleSheets({
+      apiKey: LC_GOOGLE_CONFIG.api_key,
+      sheetId: DOC_CONFIG.performance,
+    })
+
+    console.log(data)
+  }
+
+  useGapi()
 
   return (
     <>

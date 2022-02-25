@@ -13,4 +13,8 @@ export default defineConfig({
       },
     ],
   },
+  server: {
+    https: true,
+    port: 8080,
+  },
 })
